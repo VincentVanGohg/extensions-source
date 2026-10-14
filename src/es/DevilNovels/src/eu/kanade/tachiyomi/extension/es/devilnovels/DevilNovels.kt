@@ -9,7 +9,10 @@ import org.json.JSONObject
 import org.jsoup.nodes.Document
 
 @Source
-class DevilNovels : LightNovelWPNovel() {
+class DevilNovels(
+    override val lang: String,
+    override val id: Long,
+) : LightNovelWPNovel() {
 
     override val seriesPath = ""
 
