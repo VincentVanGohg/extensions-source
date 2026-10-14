@@ -13,7 +13,8 @@ class DevilNovels(
     override val lang: String,
     override val id: Long,
 ) : LightNovelWPNovel() {
-
+override val name = "DevilNovels"
+    override val baseUrl = "https://devilnovels.com"
     override val seriesPath = ""
 
     override fun parseChapterList(doc: Document): List<SChapter> {
